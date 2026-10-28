@@ -1,0 +1,52 @@
+# ==============================================================================
+# GitHub .gitignore Template: Cisco Packet Tracer & Cross-Platform (Windows/Mac/Linux)
+# ==============================================================================
+
+# Cisco Packet Tracer Temporary & Autosave Files
+*.lock
+*.pkz
+*.pka.tmp
+*.pkt.tmp
+*.autosave
+*~
+*.bak
+
+# Windows System Files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msu
+
+# macOS System Files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Linux / Generic Temporary Files
+*~
+.directory
+.Trash-*
+
+# Editor & IDE Directories
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Log files
+*.log
