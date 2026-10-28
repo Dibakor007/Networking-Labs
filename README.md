@@ -1,7 +1,7 @@
 # 🌐 Cisco Packet Tracer Networking Labs
 
 [![Cisco Packet Tracer](https://img.shields.io/badge/Cisco_Packet_Tracer-v8.0+-005073?style=for-the-badge&logo=cisco&logoColor=white)](https://www.netacad.com/courses/packet-tracer)
-[![Repository](https://img.shields.io/badge/Repository-Networking--Labs-blue?style=for-the-badge&logo=github&logoColor=white)](#)
+[![Repository](https://img.shields.io/badge/Repository-Networking--Labs-blue?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Dibakor007/Networking-Labs)
 [![Networking](https://img.shields.io/badge/Networking-CCNA_Prep-blue?style=for-the-badge&logo=wireshark&logoColor=white)](#)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 
@@ -14,16 +14,16 @@ A structured collection of hands-on computer networking lab topologies and pract
 - [Overview](#-overview)
 - [Summary of Labs](#-summary-of-labs)
 - [Detailed Lab Descriptions & Configurations](#-detailed-lab-descriptions--configurations)
-  - [1. 1.Basic.pkt — Basic LAN Connectivity](#1-1basicpkt--basic-lan-connectivity)
-  - [2. 2.Routing.pkt — Inter-Network Routing](#2-2routingpkt--inter-network-routing)
-  - [3. 3.Triangle.pkt — Redundant Triangle Topology](#3-3trianglepkt--redundant-triangle-topology)
-  - [4. 4.Routing_CLI.pkt — Cisco IOS CLI Configuration](#4-4routing_clipkt--cisco-ios-cli-configuration)
-  - [5. 5.IP-subnetting.pkt — IPv4 Subnetting & VLSM Design](#5-5ip-subnettingpkt--ipv4-subnetting--vlsm-design)
-  - [6. 5.Static Routing.pkt — Static & Default Route Engineering](#6-5static-routingpkt--static--default-route-engineering)
-  - [7. 6.SSH_config.pkt — Secure Remote Management (SSHv2)](#7-6ssh_configpkt--secure-remote-management-sshv2)
-  - [8. 7.VLAN config.pkt — VLANs, 802.1Q Trunking & Inter-VLAN Routing](#8-7vlan-configpkt--vlans-8021q-trunking--inter-vlan-routing)
-  - [9. 8.Server Config.pkt — Multi-Service Network Server](#9-8server-configpkt--multi-service-network-server)
-  - [10. 9.Vlan with server.pkt — Enterprise Multi-VLAN Architecture with Central Services](#10-9vlan-with-serverpkt--enterprise-multi-vlan-architecture-with-central-services)
+  - [01. 1.Basic.pkt — Basic LAN Connectivity](#01-1basicpkt--basic-lan-connectivity)
+  - [02. 2.Routing.pkt — Inter-Network Routing](#02-2routingpkt--inter-network-routing)
+  - [03. 3.Triangle.pkt — Redundant Triangle Topology](#03-3trianglepkt--redundant-triangle-topology)
+  - [04. 4.Routing_CLI.pkt — Cisco IOS CLI Configuration](#04-4routing_clipkt--cisco-ios-cli-configuration)
+  - [05. 5.Static Routing.pkt — Static & Default Route Engineering](#05-5static-routingpkt--static--default-route-engineering)
+  - [06. 6.IP-subnetting.pkt — IPv4 Subnetting & VLSM Design](#06-6ip-subnettingpkt--ipv4-subnetting--vlsm-design)
+  - [07. 7.SSH_config.pkt — Secure Remote Management (SSHv2)](#07-7ssh_configpkt--secure-remote-management-sshv2)
+  - [08. 8.VLAN config.pkt — VLANs, 802.1Q Trunking & Inter-VLAN Routing](#08-8vlan-configpkt--vlans-8021q-trunking--inter-vlan-routing)
+  - [09. 9.Server Config.pkt — Multi-Service Network Server](#09-9server-configpkt--multi-service-network-server)
+  - [10. 10.Vlan with server.pkt — Enterprise Multi-VLAN Architecture with Central Services](#10-10vlan-with-serverpkt--enterprise-multi-vlan-architecture-with-central-services)
 - [Prerequisites & Software](#-prerequisites--software)
 - [How to Run These Labs](#-how-to-run-these-labs)
 - [Individual Git Commit Guide](#-individual-git-commit-guide)
@@ -36,6 +36,7 @@ A structured collection of hands-on computer networking lab topologies and pract
 ## 📌 Overview
 
 **Repository Name:** `Networking-Labs`  
+**GitHub URL:** [Dibakor007/Networking-Labs](https://github.com/Dibakor007/Networking-Labs)  
 **Simulation Tool:** Cisco Packet Tracer (v8.0+)  
 **Scope:** Fundamental to Intermediate Computer Networking (CCNA-level concepts)
 
@@ -51,18 +52,18 @@ This repository serves as a practical, reproducible portfolio of network designs
 | **02** | [`2.Routing.pkt`](2.Routing.pkt) | **Inter-Network Routing** | Connecting multiple subnets, default gateways, router interface configuration |
 | **03** | [`3.Triangle.pkt`](3.Triangle.pkt) | **Triangle / Redundant Topology** | 3-router meshed design, multi-hop routing, path selection, link redundancy |
 | **04** | [`4.Routing_CLI.pkt`](4.Routing_CLI.pkt) | **Router CLI Configuration** | Cisco IOS CLI modes, interface configuration, saving configs to NVRAM |
-| **05** | [`5.IP-subnetting.pkt`](5.IP-subnetting.pkt) | **Subnetting & VLSM** | Variable Length Subnet Masking, CIDR notation, broadcast domain conservation |
-| **06** | [`5.Static Routing.pkt`](5.Static%20Routing.pkt) | **Static & Default Routing** | `ip route` next-hop / exit-interface, default route forwarding (`0.0.0.0/0`) |
-| **07** | [`6.SSH_config.pkt`](6.SSH_config.pkt) | **Secure Remote Administration** | SSHv2, RSA key generation, local authentication, VTY line security |
-| **08** | [`7.VLAN config.pkt`](7.VLAN%20config.pkt) | **VLANs & 802.1Q Trunking** | Layer 2 broadcast segmentation, 802.1Q trunks, Router-on-a-Stick (sub-interfaces) |
-| **09** | [`8.Server Config.pkt`](8.Server%20Config.pkt) | **Network Infrastructure Services** | DHCP pool distribution, DNS name resolution, HTTP/Web server hosting |
-| **10** | [`9.Vlan with server.pkt`](9.Vlan%20with%20server.pkt) | **Multi-VLAN with Central Services** | Inter-VLAN routing, DHCP Relay (`ip helper-address`), central DNS/Web access |
+| **05** | [`5.Static Routing.pkt`](5.Static%20Routing.pkt) | **Static & Default Routing** | `ip route` next-hop / exit-interface, default route forwarding (`0.0.0.0/0`) |
+| **06** | [`6.IP-subnetting.pkt`](6.IP-subnetting.pkt) | **Subnetting & VLSM** | Variable Length Subnet Masking, CIDR notation, broadcast domain conservation |
+| **07** | [`7.SSH_config.pkt`](7.SSH_config.pkt) | **Secure Remote Administration** | SSHv2, RSA key generation, local authentication, VTY line security |
+| **08** | [`8.VLAN config.pkt`](8.VLAN%20config.pkt) | **VLANs & 802.1Q Trunking** | Layer 2 broadcast segmentation, 802.1Q trunks, Router-on-a-Stick (sub-interfaces) |
+| **09** | [`9.Server Config.pkt`](9.Server%20Config.pkt) | **Network Infrastructure Services** | DHCP pool distribution, DNS name resolution, HTTP/Web server hosting |
+| **10** | [`10.Vlan with server.pkt`](10.Vlan%20with%20server.pkt) | **Multi-VLAN with Central Services** | Inter-VLAN routing, DHCP Relay (`ip helper-address`), central DNS/Web access |
 
 ---
 
 ## 🔬 Detailed Lab Descriptions & Configurations
 
-### 1. `1.Basic.pkt` — Basic LAN Connectivity
+### 01. `1.Basic.pkt` — Basic LAN Connectivity
 - **Objective:** Establish physical and logical communication between multiple host endpoints within a single local area network (LAN).
 - **Topology & Design:**
   - Client workstations (PCs/Laptops) interconnected through a centralized Layer 2 Cisco Catalyst switch using standard straight-through Ethernet patch cables.
@@ -74,7 +75,7 @@ This repository serves as a practical, reproducible portfolio of network designs
 
 ---
 
-### 2. `2.Routing.pkt` — Inter-Network Routing
+### 02. `2.Routing.pkt` — Inter-Network Routing
 - **Objective:** Route packets between distinct local area networks located on separate IP subnets.
 - **Topology & Design:**
   - Two or more LAN segments connected to independent FastEthernet / GigabitEthernet interfaces on a Cisco router.
@@ -86,7 +87,7 @@ This repository serves as a practical, reproducible portfolio of network designs
 
 ---
 
-### 3. `3.Triangle.pkt` — Redundant Triangle Topology
+### 03. `3.Triangle.pkt` — Redundant Triangle Topology
 - **Objective:** Construct a resilient, 3-router mesh topology to evaluate path redundancy, failover, and multi-hop forwarding.
 - **Topology & Design:**
   - Three Cisco routers interconnected in a triangular arrangement via Serial (WAN) or GigabitEthernet links.
@@ -98,7 +99,7 @@ This repository serves as a practical, reproducible portfolio of network designs
 
 ---
 
-### 4. `4.Routing_CLI.pkt` — Cisco IOS CLI Configuration
+### 04. `4.Routing_CLI.pkt` — Cisco IOS CLI Configuration
 - **Objective:** Configure, secure, and administer router settings entirely through the Cisco IOS Command-Line Interface (CLI).
 - **Topology & Design:**
   - Cisco Router accessed via console/terminal simulation.
@@ -110,19 +111,7 @@ This repository serves as a practical, reproducible portfolio of network designs
 
 ---
 
-### 5. `5.IP-subnetting.pkt` — IPv4 Subnetting & VLSM Design
-- **Objective:** Divide a given network address block into multiple variable-sized subnets tailored to department-specific host requirements.
-- **Topology & Design:**
-  - Multi-department enterprise structure (e.g., Administration, Engineering, Guest).
-  - Allocation of distinct subnet blocks derived through Variable Length Subnet Masking (VLSM).
-- **Key Concepts:**
-  - CIDR prefix notation (`/24`, `/25`, `/26`, `/28`, etc.) and subnet calculation.
-  - Calculating Network ID, First Usable Host, Last Usable Host, and Broadcast Address.
-  - Eliminating address wastage while preventing overlapping subnets.
-
----
-
-### 6. `5.Static Routing.pkt` — Static & Default Route Engineering
+### 05. `5.Static Routing.pkt` — Static & Default Route Engineering
 - **Objective:** Program deterministic routing paths across multi-router segments using manual route definitions.
 - **Topology & Design:**
   - Multi-router backbone connecting remote LANs without dynamic routing overhead.
@@ -141,7 +130,19 @@ This repository serves as a practical, reproducible portfolio of network designs
 
 ---
 
-### 7. `6.SSH_config.pkt` — Secure Remote Management (SSHv2)
+### 06. `6.IP-subnetting.pkt` — IPv4 Subnetting & VLSM Design
+- **Objective:** Divide a given network address block into multiple variable-sized subnets tailored to department-specific host requirements.
+- **Topology & Design:**
+  - Multi-department enterprise structure (e.g., Administration, Engineering, Guest).
+  - Allocation of distinct subnet blocks derived through Variable Length Subnet Masking (VLSM).
+- **Key Concepts:**
+  - CIDR prefix notation (`/24`, `/25`, `/26`, `/28`, etc.) and subnet calculation.
+  - Calculating Network ID, First Usable Host, Last Usable Host, and Broadcast Address.
+  - Eliminating address wastage while preventing overlapping subnets.
+
+---
+
+### 07. `7.SSH_config.pkt` — Secure Remote Management (SSHv2)
 - **Objective:** Harden network appliances by replacing unencrypted Telnet with encrypted Secure Shell (SSH version 2) remote terminal management.
 - **Topology & Design:**
   - Client workstation connected via switch/network to manage a remote Cisco router.
@@ -163,7 +164,7 @@ This repository serves as a practical, reproducible portfolio of network designs
 
 ---
 
-### 8. `7.VLAN config.pkt` — VLANs, 802.1Q Trunking & Inter-VLAN Routing
+### 08. `8.VLAN config.pkt` — VLANs, 802.1Q Trunking & Inter-VLAN Routing
 - **Objective:** Partition physical switch hardware into isolated logical broadcast domains (VLANs) and route between them using Router-on-a-Stick.
 - **Topology & Design:**
   - Cisco Catalyst 2960 switch segmented into multiple VLANs (e.g., VLAN 10, VLAN 20).
@@ -191,7 +192,7 @@ This repository serves as a practical, reproducible portfolio of network designs
 
 ---
 
-### 9. `8.Server Config.pkt` — Multi-Service Network Server
+### 09. `9.Server Config.pkt` — Multi-Service Network Server
 - **Objective:** Deploy and integrate central network infrastructure services using a Cisco Packet Tracer generic server.
 - **Topology & Design:**
   - Client workstations connected to a server running concurrent services over a unified LAN.
@@ -205,7 +206,7 @@ This repository serves as a practical, reproducible portfolio of network designs
 
 ---
 
-### 10. `9.Vlan with server.pkt` — Enterprise Multi-VLAN Architecture with Central Services
+### 10. `10.Vlan with server.pkt` — Enterprise Multi-VLAN Architecture with Central Services
 - **Objective:** Build a complete enterprise campus topology where clients distributed across isolated VLANs seamlessly access centralized server farm resources.
 - **Topology & Design:**
   - Multiple segregated client VLANs spanning switches.
@@ -237,7 +238,7 @@ This repository serves as a practical, reproducible portfolio of network designs
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/<your-username>/Networking-Labs.git
+   git clone https://github.com/Dibakor007/Networking-Labs.git
    cd Networking-Labs
    ```
 2. **Launch Cisco Packet Tracer.**
@@ -249,71 +250,48 @@ This repository serves as a practical, reproducible portfolio of network designs
 
 ## 📝 Individual Git Commit Guide
 
-If you wish to commit each lab file manually with a dedicated, professional commit message, follow this sequence in your terminal:
+Reference sequence for committing each numbered lab file:
 
 ```bash
-# 0. Initialize repository and add documentation / configuration files
-git init
-git add .gitignore
-git commit -m "chore: add .gitignore for OS and Packet Tracer artifacts"
-
-git add LICENSE
-git commit -m "docs: add MIT License"
-
-git add README.md
-git commit -m "docs: add comprehensive README with serial lab breakdown and guides"
-
 # 01. Lab 1
 git add "1.Basic.pkt"
-git commit -m "feat(lab-01): add basic LAN connectivity and host ping topology"
+git commit -m "(lab-01): add basic LAN connectivity and host ping topology"
 
 # 02. Lab 2
 git add "2.Routing.pkt"
-git commit -m "feat(lab-02): add multi-subnet inter-network routing topology"
+git commit -m "(lab-02): add multi-subnet inter-network routing topology"
 
 # 03. Lab 3
 git add "3.Triangle.pkt"
-git commit -m "feat(lab-03): add redundant 3-router triangle mesh routing topology"
+git commit -m "(lab-03): add redundant 3-router triangle mesh routing topology"
 
 # 04. Lab 4
 git add "4.Routing_CLI.pkt"
-git commit -m "feat(lab-04): add Cisco IOS router CLI configuration lab"
+git commit -m "(lab-04): add Cisco IOS router CLI configuration lab"
 
 # 05. Lab 5
-git add "5.IP-subnetting.pkt"
-git commit -m "feat(lab-05): add IPv4 subnetting and VLSM address scheme lab"
+git add "5.Static Routing.pkt"
+git commit -m "(lab-05): add static route and default gateway configuration lab"
 
 # 06. Lab 6
-git add "5.Static Routing.pkt"
-git commit -m "feat(lab-06): add static route and default gateway configuration lab"
+git add "6.IP-subnetting.pkt"
+git commit -m "(lab-06): add IPv4 subnetting and VLSM address scheme lab"
 
 # 07. Lab 7
-git add "6.SSH_config.pkt"
-git commit -m "feat(lab-07): add secure remote management with SSHv2 and RSA keys"
+git add "7.SSH_config.pkt"
+git commit -m "(lab-07): add secure remote management with SSHv2 and RSA keys"
 
 # 08. Lab 8
-git add "7.VLAN config.pkt"
-git commit -m "feat(lab-08): add VLAN segmentation, 802.1Q trunking, and Router-on-a-Stick"
+git add "8.VLAN config.pkt"
+git commit -m "(lab-08): add VLAN segmentation, 802.1Q trunking, and Router-on-a-Stick"
 
 # 09. Lab 9
-git add "8.Server Config.pkt"
-git commit -m "feat(lab-09): add multi-service server deployment for DHCP, DNS, and HTTP"
+git add "9.Server Config.pkt"
+git commit -m "(lab-09): add multi-service server deployment for DHCP, DNS, and HTTP"
 
 # 10. Lab 10
-git add "9.Vlan with server.pkt"
-git commit -m "feat(lab-10): add enterprise multi-VLAN topology with DHCP helper and central services"
-```
-
-### Linking and Pushing to GitHub:
-```bash
-# Rename branch to main
-git branch -M main
-
-# Add your GitHub remote (replace <your-username> with your GitHub account)
-git remote add origin https://github.com/<your-username>/Networking-Labs.git
-
-# Push all commits to GitHub
-git push -u origin main
+git add "10.Vlan with server.pkt"
+git commit -m "(lab-10): add enterprise multi-VLAN topology with DHCP helper and central services"
 ```
 
 ---
